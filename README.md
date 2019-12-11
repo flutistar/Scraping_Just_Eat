@@ -1,7 +1,11 @@
 # Just Eat Scraper
 ### Overview
 
-This web app scrapes list of restaurants from the https://www.just-eat.co.uk/, and save into Xlsx file.
+  This web app scrapes list of restaurants from the https://www.just-eat.co.uk/, and save into Xlsx file.
+  * Import Postcodes from xlsx file.
+  * Search Restaurant URLs with Postcodes
+  * Scrap detail list of restaurants with restaurant URLs
+  * Export to xlsx file
 
 ###INSTALL
   * install python
@@ -15,6 +19,10 @@ This web app scrapes list of restaurants from the https://www.just-eat.co.uk/, a
 ### RUN
   Run the following command:
          python main.py
+### INPUT
+  Postcode districts-modified.xlsx
+### OUTPUT
+  Restaurants.xlsx
 ### CLONE
   Run `git clone https://github.com/developer7132/article-scraper.git` to clone the files to your local machine.
   
