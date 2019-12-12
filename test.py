@@ -2,7 +2,7 @@
 import xlsxwriter 
 
 def insertintoSheet(Urls):
-    workbook = xlsxwriter.Workbook('Restaurants.xlsx') 
+    workbook = xlsxwriter.Workbook('URLs.xlsx') 
     worksheet = workbook.add_worksheet("rstURLs")
     row_count = 0
     print(len(Urls))
