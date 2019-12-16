@@ -24,7 +24,7 @@
 ### OUTPUT
   Restaurants.xlsx
 ### CLONE
-  Run `git clone https://github.com/developer7132/article-scraper.git` to clone the files to your local machine.
+  Run `git clone https://github.com/developer7132/Scraping_Just_Eat.git` to clone the files to your local machine.
   
 ### PACKAGES USED
  * selenium

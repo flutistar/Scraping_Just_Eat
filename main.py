@@ -3,12 +3,14 @@
 
 from getPostcode import getPostcode
 from scrapRestaurants import scrapRestaurants
-from scrapLists import scrapLists
+from scrapLists import getList
 from test import insertintoSheet
 
 postcodes = []
+restaurantUrls = []
+finalUrls = []
 postcodes = getPostcode.importXlsx()
 restaurantUrls = scrapRestaurants.loaddriver(postcodes)
-restaurantUrls = list(set(restaurantUrls)) 
-insertintoSheet(restaurantUrls)
-scrapLists.getList(restaurantUrls)
+finalUrls = getPostcode.checkDuplicate(restaurantUrls)
+insertintoSheet(finalUrls)
+getList(finalUrls)

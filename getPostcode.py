@@ -11,4 +11,10 @@ class getPostcode():
         for i in range(1,num_cols):
             postcodes.append(sheet.cell_value(i, 0))
         postcodes.extend('Postcode')
-        return postcodes    
+        return postcodes
+    def checkDuplicate(inputList):
+        results = [] 
+        for item in inputList: 
+            if item not in results: 
+                results.append(item)
+        return results 
